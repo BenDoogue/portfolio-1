@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BenDoogue // Portfolio 1 (Retro Index)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="desktop">
+    <!-- Main Retro Window -->
+    <div class="window main-window">
+      <!-- Title Bar -->
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <span class="win-icon" aria-hidden="true">&#9635;</span>
+          C:\USERS\BENDOOGUE\PORTFOLIO_1.HTM — Netscape / Retro Index
+        </div>
+        <div class="title-bar-controls" aria-hidden="true">
+          <span class="ctrl-btn">_</span>
+          <span class="ctrl-btn">&#9633;</span>
+          <span class="ctrl-btn">X</span>
+        </div>
+      </div>
+
+      <!-- Classic Menu Bar -->
+      <div class="menu-bar">
+        <a href="#about"><u>A</u>bout</a>
+        <a href="#projects"><u>P</u>rojects</a>
+        <a href="#contact"><u>C</u>ontact</a>
+        <a href="https://github.com/BenDoogue" target="_blank" rel="noopener noreferrer"><u>G</u>itHub</a>
+      </div>
+
+      <!-- Address / Marquee Strip -->
+      <div class="address-bar">
+        <span class="addr-label">Location:</span>
+        <span class="addr-box" id="location-url">https://bendoogue.github.io/portfolio-1/</span>
+      </div>
+
+      <div class="marquee-strip">
+        <div class="marquee-text" id="marquee-status">
+          *** WELCOME TO BENDOOGUE'S PROJECT INDEX *** STUDYDESK &amp; DOORLIST NOW LIVE *** HUMAN-AI INTERACTION &amp; COGNITIVE SCIENCE ***
+        </div>
+      </div>
+
+      <!-- Window Content -->
+      <div class="window-body">
+        <!-- Header Banner -->
+        <header class="hero-box">
+          <div class="hero-left">
+            <pre class="ascii-logo" aria-hidden="true">
+ ____  _____ _   _ ____   ___   ___   ____ _   _ _____
+| __ )| ____| \ | |  _ \ / _ \ / _ \ / ___| | | | ____|
+|  _ \|  _| |  \| | | | | | | | | | | |  _| | | |  _|
+| |_) | |___| |\  | |_| | |_| | |_| | |_| | |_| | |___
+|____/|_____|_| \_|____/ \___/ \___/ \____|\___/|_____|</pre>
+            <h1 id="profile-name">Ben Doogue</h1>
+            <p class="tagline" id="profile-tagline"></p>
+          </div>
+          <div class="hero-right">
+            <div class="status-card">
+              <div class="status-row"><span class="led"></span> <strong id="profile-status">ONLINE</strong></div>
+              <div class="status-meta">Handle: <code id="profile-handle">@BenDoogue</code></div>
+              <div class="status-meta">Base: <span id="profile-location">Wellington, NZ</span></div>
+              <div class="status-meta">Projects: <span id="project-count">0</span> indexed</div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Quick Links Bar -->
+        <nav class="quick-links" aria-label="Featured Project Links">
+          <span class="ql-label">QUICK LAUNCH &gt;</span>
+          <a class="retro-btn" href="https://bendoogue.github.io/StudyDesk/" target="_blank" rel="noopener noreferrer">&#128196; StudyDesk (Live)</a>
+          <a class="retro-btn" href="https://bendoogue.github.io/DoorList/" target="_blank" rel="noopener noreferrer">&#128203; DoorList (Live)</a>
+          <a class="retro-btn" href="https://github.com/BenDoogue" target="_blank" rel="noopener noreferrer">&#128187; GitHub Profile</a>
+        </nav>
+
+        <!-- Two Column Grid: About + Sidebar -->
+        <div class="layout-grid">
+          <section id="about" class="panel">
+            <div class="panel-header">README.MD — ABOUT ME</div>
+            <div class="panel-body" id="about-content">
+              <!-- Populated by app.js -->
+            </div>
+          </section>
+
+          <aside class="panel">
+            <div class="panel-header">SYSTEM.INI — INTERESTS</div>
+            <div class="panel-body">
+              <ul class="retro-list" id="interests-list">
+                <!-- Populated by app.js -->
+              </ul>
+              <hr class="retro-hr" />
+              <div class="note-box">
+                <strong>HOW TO EDIT:</strong><br />
+                Add new projects in <code>projects.js</code> — no build tools needed.
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Projects Directory -->
+        <section id="projects" class="panel projects-panel">
+          <div class="panel-header projects-header">
+            <span>C:\PROJECTS\INDEX — ALL PROJECTS</span>
+            <div class="filter-bar" role="group" aria-label="Filter projects">
+              <button class="filter-btn active" data-filter="all">ALL</button>
+              <button class="filter-btn" data-filter="page">LIVE PAGES</button>
+              <button class="filter-btn" data-filter="repo">REPOS</button>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div id="projects-container" class="projects-grid">
+              <!-- Populated by app.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact & Retro Badges -->
+        <section id="contact" class="panel">
+          <div class="panel-header">MAILTO // CONTACT &amp; LINKS</div>
+          <div class="panel-body contact-body">
+            <div>
+              <p>
+                <strong>Email:</strong>
+                <a id="contact-email" href="mailto:b.d.doogue@gmail.com">b.d.doogue@gmail.com</a>
+              </p>
+              <p>
+                <strong>GitHub:</strong>
+                <a id="contact-github" href="https://github.com/BenDoogue" target="_blank" rel="noopener noreferrer">https://github.com/BenDoogue</a>
+              </p>
+            </div>
+            <div class="badges-row" aria-label="Retro web badges">
+              <span class="badge badge-html">HTML5 // PURE</span>
+              <span class="badge badge-css">NO BUILD STEP</span>
+              <span class="badge badge-gh">GITHUB PAGES</span>
+              <span class="badge badge-hci">HCI &amp; AI</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Status Bar -->
+      <footer class="status-bar">
+        <div class="status-cell">Document: Done</div>
+        <div class="status-cell">Portfolio 1 // Legacy Web Edition</div>
+        <div class="status-cell status-clock" id="retro-clock">--:--:--</div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
